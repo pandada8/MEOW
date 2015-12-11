@@ -108,7 +108,7 @@ if [ ! -e $config_dir ]; then
 fi
 
 # Download startup plist file
-if [ $start_on_login == "y" ]; then
+if [ "$start_on_login" == "y" ]; then
     la_dir="$HOME/Library/LaunchAgents"
     plist="net.ohrz.meow.plist"
     plist_url="$doc_base/osx/$plist"
